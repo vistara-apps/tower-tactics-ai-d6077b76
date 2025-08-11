@@ -10,3 +10,10 @@ dist
 coverage
 .nyc_output
 .env.production
+
+# Next.js
+.next/
+out/
+
+# TypeScript
+tsconfig.tsbuildinfo
