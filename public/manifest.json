@@ -1,0 +1,14 @@
+{
+  "name": "Tower Tactics AI",
+  "description": "Tower Tactics AI is a Base Mini App built with Zara.",
+  "image": "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=OG",
+  "external_url": "https://d6077b76-fbf2-41d7-8cf1-c33f185ddb30.vistara.dev",
+  "properties": {
+    "app": {
+      "name": "Tower Tactics AI",
+      "description": "Tower Tactics AI is a Base Mini App built with Zara.",
+      "url": "https://d6077b76-fbf2-41d7-8cf1-c33f185ddb30.vistara.dev",
+      "icon": "https://0co.to/images/zara-2.png"
+    }
+  }
+}

@@ -1,0 +1,75 @@
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --font-inter: 'Inter', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--font-inter);
+}
+
+body {
+  color: hsl(220 55% 15%);
+  background: hsl(220 20% 99%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 512px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.animate-fade-in {
+  animation: fadeIn 200ms ease-in-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 300ms ease-in-out;
+}
+
+.loading-spinner {
+  border: 2px solid hsl(220 15% 95%);
+  border-top: 2px solid hsl(220 89.8% 52.4%);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { 
+    transform: translateY(10px); 
+    opacity: 0; 
+  }
+  to { 
+    transform: translateY(0); 
+    opacity: 1; 
+  }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

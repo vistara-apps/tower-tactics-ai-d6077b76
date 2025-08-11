@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "Tower Tactics AI",
+    "subtitle": "Built with Zara",
+    "description": "Tower Tactics AI is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://d6077b76-fbf2-41d7-8cf1-c33f185ddb30.vistara.dev",
+    "splashImageUrl": "https://dummyimage.com/200x200/0a0b0d/ffffff.png&text=Splash",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=Hero",
+    "tagline": "Tower Tactics AI",
+    "screenshotUrls": [
+      "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=Shot1",
+      "https://dummyimage.com/1200x628/0a0b0d/ffffff.png&text=Shot2"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "mini app",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://d6077b76-fbf2-41d7-8cf1-c33f185ddb30.vistara.dev/api/webhook"
+  }
+}
