@@ -74,7 +74,7 @@ export default function HomePage() {
   }, [addFrame]);
 
   const saveFrameButton = useMemo(() => {
-    if (context && !context.client.added && !frameAdded) {
+    if (context && context.user && !frameAdded) {
       return (
         <Button variant="outline" size="sm" onClick={handleAddFrame}>
           Save App
@@ -93,7 +93,7 @@ export default function HomePage() {
         body: JSON.stringify({ 
           query, 
           queryType, 
-          userId: context?.client.fid || 'anonymous' 
+          userId: context?.user?.fid || 'anonymous' 
         }),
       });
 
@@ -103,7 +103,7 @@ export default function HomePage() {
       setCurrentGuide(data);
       setCurrentView('guides');
 
-      if (context?.client.added) {
+      if (context?.user) {
         await sendNotification({
           title: 'Strategy Guide Ready! 🎯',
           body: 'Your personalized Tower Defense strategy has been generated.',
