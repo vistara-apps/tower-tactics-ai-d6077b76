@@ -1,11 +1,15 @@
-
 import OpenAI from 'openai';
 
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: process.env.OPENAI_API_KEY || 'dummy-key-for-build',
 });
 
 export async function generateStrategyGuide(query: string, queryType: string): Promise<string> {
+  // Check if we have a real API key
+  if (!process.env.OPENAI_API_KEY || process.env.OPENAI_API_KEY === 'dummy-key-for-build') {
+    throw new Error('OpenAI API key not configured');
+  }
+
   const systemPrompt = `You are an expert Farcaster Tower Defense strategist. Provide detailed, actionable advice for tower defense gameplay. Format your response in markdown with clear sections and bullet points.
 
 Query Type: ${queryType}
